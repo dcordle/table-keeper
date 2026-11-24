@@ -46,7 +46,8 @@ For `open table` and `drop-in` formats:
 - A place may have two states, such as Quiet and Alerted or Day and Night:
   what flips it and what the group sees in each.
 - Each person: what they want, know, share freely, what it takes to get
-  the rest, and what they hide or lie about (the house NPC rule).
+  the rest, and what they hide or lie about, with a way in for every
+  hidden fact and at most one sample line (the house NPC rule).
 
 ## Clues and obstacles
 
@@ -108,7 +109,8 @@ a shorter route, or starting the confrontation closer.
 
 Walk the prep with four groups: one that skips the obvious entrance, one
 that misses the first clue, one that treats an opponent as an ally, and
-one that withdraws. Each still reaches an end. Confirm every
+one that withdraws. Each still reaches an end. Check every NPC: each
+hidden fact has a way in, and no NPC has more than one sample line. Confirm every
 `Required elements` item from the profile is there.
 
 ## After the session

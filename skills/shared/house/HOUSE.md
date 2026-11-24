@@ -35,6 +35,11 @@ campaign's rule wins over both.
   freely, what it takes to get the rest, and what they hide or lie
   about. The GM voices them at the table, so write no conversation
   scripts or dialogue trees.
+- Give the voice as a speech pattern in a few words. Write at most one
+  short sample line per NPC, and no quoted exchanges or lists of lines.
+- Every hidden fact an NPC holds names at least one way the crew can get
+  it: a question, a push, a trade, a piece of evidence, or something the
+  crew does. A secret with no way in is cut or given one.
 - An NPC gives up information only when the crew asks, pushes or earns
   it, or when the NPC has a reason of their own to say it. No lore dumps.
 
