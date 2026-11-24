@@ -1,0 +1,26 @@
+{
+  "Q1": {
+    "X": "original",
+    "Y": "table-keeper"
+  },
+  "Q2": {
+    "X": "original",
+    "Y": "table-keeper"
+  },
+  "Q3": {
+    "X": "original",
+    "Y": "table-keeper"
+  },
+  "Q4": {
+    "X": "table-keeper",
+    "Y": "original"
+  },
+  "Q5": {
+    "X": "original",
+    "Y": "table-keeper"
+  },
+  "Q6": {
+    "X": "table-keeper",
+    "Y": "original"
+  }
+}

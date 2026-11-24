@@ -50,6 +50,10 @@ def auto_check(item: dict, text: str) -> bool | None:
 
 
 def prepare(run_dir: Path, questions: list[dict], seed: int | None = None) -> dict:
+    """Make a run folder and its random key. Refuses a run that already has a
+    key: a new key would pin the old responses on the wrong arms."""
+    if (run_dir / "key.json").exists():
+        raise FileExistsError(f"{run_dir} already has a key.json; use a new run name")
     rng = random.Random(seed)
     key = {}
     for q in questions:
@@ -128,7 +132,11 @@ def main(argv: list[str] | None = None) -> int:
     run = args.prepare or args.score
     run_dir = BENCH / "results" / run
     if args.prepare:
-        prepare(run_dir, questions)
+        try:
+            prepare(run_dir, questions)
+        except FileExistsError as err:
+            print(f"PROBLEM: {err}")
+            return 1
         print(f"Prepared {run_dir.relative_to(ROOT)}")
         return 0
     text = summary_md(score(run_dir, questions), run)
