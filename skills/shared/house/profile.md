@@ -5,7 +5,8 @@ the prep core fit that game. It lives with the campaign, never in this
 repository:
 
 - In a claude.ai Project: a doc named `Table-Keeper Profile`.
-- In a vault: `_meta/table-keeper-profile.md`.
+- In a vault: `table-keeper-profile.md` in the `_meta` folder, or in the
+  vault's own meta folder when it uses another name.
 
 When a profile and the campaign's own documents disagree, the campaign's
 documents win, and the GM is told which profile line to fix. With no
@@ -38,7 +39,10 @@ else in the doc is ignored by the checker, so a GM can add notes.
 
 - **Main fight band:** written with `>`, `>=`, `<` or `<=`, an optional
   multiplier, and a 2024 budget name (`Low`, `Moderate`, `High`), joined by
-  `and`. Examples: `> Moderate and <= High`, `>= 1.5x High`.
+  `and`, or `judgment` when the campaign sets no fixed band. Examples:
+  `> Moderate and <= High`, `>= 1.5x High`, `judgment`. With `judgment`,
+  still give the XP against the 2024 budgets and the swinginess flags, and
+  leave the call to the GM.
 - **Other fights:** `unconstrained` or a band written the same way.
 - **Monster hit points:** `as written`, `average`, `max`, or a percentage
   of the most the hit dice can roll, such as `75%`.

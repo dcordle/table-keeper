@@ -8,7 +8,8 @@ campaign's rule wins over both.
 ## Profile and prep core
 
 - Find the campaign's profile first: a Project doc named
-  `Table-Keeper Profile`, or `_meta/table-keeper-profile.md` in a vault.
+  `Table-Keeper Profile`, or `table-keeper-profile.md` in a vault's `_meta`
+  folder or its own meta folder.
   `profile.md` beside this file gives its format. With no profile, use the
   defaults in this file and say so once.
 - When preparing, building or reviewing a session, an encounter or a
