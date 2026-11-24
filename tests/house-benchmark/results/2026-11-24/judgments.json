@@ -1,0 +1,51 @@
+{
+  "Q1": {
+    "newcomer": {"X": false, "Y": true},
+    "standalone": {"X": false, "Y": true},
+    "no-pc-arcs": {"X": false, "Y": true},
+    "npc-blocks": {"X": false, "Y": false},
+    "no-lore-dump": {"X": true, "Y": true},
+    "read-aloud": {"X": false, "Y": true},
+    "three-clues": {"X": false, "Y": false},
+    "route": {"X": true, "Y": true},
+    "rumors": {"X": false, "Y": true},
+    "world-taste": {"X": false, "Y": true},
+    "band": {"X": true, "Y": true},
+    "risk-note": {"X": true, "Y": true},
+    "required": {"X": true, "Y": true},
+    "load": {"X": false, "Y": true},
+    "walkthrough": {"X": false, "Y": true}
+  },
+  "Q2": {
+    "five-not-four": {"X": true, "Y": true},
+    "in-band": {"X": true, "Y": true},
+    "no-rescale": {"X": true, "Y": true},
+    "swingy": {"X": true, "Y": true},
+    "backup-retreat": {"X": true, "Y": true},
+    "labels": {"X": true, "Y": true}
+  },
+  "Q3": {
+    "block": {"X": true, "Y": true},
+    "no-script": {"X": false, "Y": false},
+    "gated-secret": {"X": true, "Y": true},
+    "no-lore-dump": {"X": true, "Y": true}
+  },
+  "Q4": {
+    "sessions-only": {"X": true, "Y": true},
+    "order": {"X": true, "Y": false},
+    "faction-steps": {"X": true, "Y": true},
+    "nothing-else": {"X": true, "Y": true}
+  },
+  "Q5": {
+    "verdict": {"X": true, "Y": true},
+    "no-scene-minutes": {"X": true, "Y": true},
+    "cut-order": {"X": false, "Y": true},
+    "travel": {"X": false, "Y": false}
+  },
+  "Q6": {
+    "below-band": {"X": true, "Y": true},
+    "save-or-drop": {"X": true, "Y": true},
+    "action-economy": {"X": true, "Y": false},
+    "fix": {"X": true, "Y": true}
+  }
+}

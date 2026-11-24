@@ -1,0 +1,2 @@
+# Benchmark results are raw answers kept as written, so they are not linted.
+default: false
