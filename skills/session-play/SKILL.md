@@ -116,3 +116,5 @@ locations and tables. Check them when a name the GM asks about isn't
 in the vault, and when improvising and the public SRD/ORC files lack
 setting detail. Read the file that fits; if the name isn't there,
 search the whole folder for it.
+
+**House layer.** Before acting, read `house/HOUSE.md` in the `shared` folder beside this skill's folder and follow it. Where it and this file disagree, `HOUSE.md` wins.

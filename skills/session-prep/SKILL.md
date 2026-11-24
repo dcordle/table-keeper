@@ -548,3 +548,5 @@ A contingency scene, `### Title` under Contingency Scenes:
 **Then**
 - What happens, as bullets.
 ```
+
+**House layer.** Before acting, read `house/HOUSE.md` in the `shared` folder beside this skill's folder and follow it. Where it and this file disagree, `HOUSE.md` wins.

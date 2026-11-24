@@ -236,3 +236,27 @@ multi-query test suite via subagents:
 - `docs/file-format-standards.md` — frontmatter and markdown conventions
 - `docs/testing-methodology.md` — how to run and interpret tests
 - `docs/campaign-lifecycle.md` — campaign management across sessions
+
+## table-keeper fork
+
+This repository is `dcordle/table-keeper`, a fork of `AntTheLimey/gm-apprentice`.
+The sections above are upstream's and still describe the code. These rules
+come first for work on the fork:
+
+- **Change upstream files as little as possible.** Put new behavior in the
+  house layer (`skills/shared/house/`) or in new files. The only upstream
+  edits are the one hook line in each skill, the plugin name in
+  `.claude-plugin/`, the fork note at the top of `README.md` and this
+  section. Leave upstream's scripts, versions and `CHANGELOG.md` alone.
+- **A house rule that overrides upstream text** is written in `HOUSE.md`
+  and listed in `skills/shared/house/overrides.json` with an exact anchor
+  phrase from the upstream file it overrides.
+- **Merging upstream:** `git fetch upstream`, merge `upstream/main` into a
+  branch, resolve conflicts in upstream's favor except for the edits named
+  above, then run `python3 scripts/house_check.py --apply-hooks` and the
+  test suite. A changed anchor means upstream rewrote that section: reread
+  it, check the house rule still fits, and update the anchor.
+- **Workflow:** branch, run `python3 scripts/house_check.py`,
+  `python3 scripts/validate_schema.py` and the Python test suite, open a PR
+  to `dcordle/table-keeper`, and ask before merging. Upstream's CodeRabbit,
+  version bump and release steps do not apply to house-layer changes.

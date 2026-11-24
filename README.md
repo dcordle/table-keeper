@@ -1,5 +1,7 @@
 # gm-apprentice
 
+> **table-keeper** is dcordle's fork of [gm-apprentice](https://github.com/AntTheLimey/gm-apprentice) by AntTheLimey. It keeps the original skills whole and adds a house layer of its own rules in `skills/shared/house/`. Install it with `/plugin marketplace add dcordle/table-keeper` and `/plugin install table-keeper`, in place of gm-apprentice rather than beside it, since the two share vault markers and backup folders.
+
 TTRPG Game Master skills for Claude Code, Codex and other AI agents.
 An apprentice that helps GMs run tabletop role-playing games -- from a
 first spark of an idea through content generation, live play, and

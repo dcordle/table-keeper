@@ -286,3 +286,5 @@ Update the file(s), log the finding and resolution in the report,
 go to the next finding. Findings that need new content or
 structural vault work go in the report's recommendations with the
 companion skill to use.
+
+**House layer.** Before acting, read `house/HOUSE.md` in the `shared` folder beside this skill's folder and follow it. Where it and this file disagree, `HOUSE.md` wins.

@@ -233,3 +233,5 @@ ask — never assume. Content must be mechanically correct and
 consistent with `shared/entity-schema.md` and
 `continuity-engine.md`. Tone per system:
 `systems/shared-patterns.md`.
+
+**House layer.** Before acting, read `house/HOUSE.md` in the `shared` folder beside this skill's folder and follow it. Where it and this file disagree, `HOUSE.md` wins.
