@@ -49,6 +49,27 @@ def test_the_campaign_passes_schema_validation():
     assert done.returncode == 0, done.stdout + done.stderr
 
 
+def test_the_campaign_passes_the_version_gate(tmp_path):
+    import shutil
+    vault = tmp_path / "campaign"
+    shutil.copytree(BENCH / "campaign", vault)
+    done = subprocess.run([sys.executable, str(ROOT / "skills" / "shared" / "scripts" / "gma.py"),
+                           "vault-check", str(vault), "version"], cwd=ROOT,
+                          capture_output=True, text=True)
+    rows = [ln for ln in done.stdout.splitlines() if ln and not ln.startswith("#")]
+    assert rows, done.stdout + done.stderr
+    # MISMATCH is fine after an upstream merge: the skills update the vault and go on.
+    assert rows[0].split("\t")[0] in {"OK", "MISMATCH"}, rows[0]
+
+
+def test_prepare_refuses_an_existing_run(tmp_path):
+    import pytest
+    questions = [{"id": "Q1", "skill": "session-prep", "prompt": "p", "rubric": []}]
+    hb.prepare(tmp_path / "run", questions, seed=1)
+    with pytest.raises(FileExistsError):
+        hb.prepare(tmp_path / "run", questions, seed=2)
+
+
 def test_auto_checks():
     dash = {"id": "d", "text": "t", "check": "no_em_dash"}
     assert hb.auto_check(dash, "plain - text") is True
