@@ -10,7 +10,7 @@ repository:
 
 When a profile and the campaign's own documents disagree, the campaign's
 documents win, and the GM is told which profile line to fix. With no
-profile, use the house defaults below and say so once.
+profile, `profile-template.md` is the profile, and the GM is told so once.
 
 Check a profile file with
 `python3 "<shared>/house/profile_check.py" <path to profile>`.
