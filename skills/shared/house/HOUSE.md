@@ -10,16 +10,15 @@ campaign's rule wins over both.
 - Find the campaign's profile first: a Project doc named
   `Table-Keeper Profile`, or `table-keeper-profile.md` in a vault's `_meta`
   folder or its own meta folder.
-  `profile.md` beside this file gives its format. With no profile, use the
-  defaults in this file and say so once.
+  `profile.md` beside this file gives its format. With no profile, use
+  `profile-template.md` beside this file as the profile and say so once.
 - When preparing, building or reviewing a session, an encounter or a
   scenario, or running the world after a session, read `prep-core.md`
   beside this file and follow it.
 
 ## Encounters
 
-- Build every encounter budget for the profile's party size, five when
-  there is no profile. Never multiply the budget by
+- Build every encounter budget for the profile's party size. Never multiply the budget by
   the characters who signed up, and never rescale a built fight to the
   roster. The danger is fixed and players choose their risk.
 
