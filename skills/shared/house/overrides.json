@@ -22,6 +22,36 @@
       "house_rule": "The world: completed sessions only",
       "file": "skills/ttrpg-expert/world-evolution.md",
       "anchor": "The world does not wait for the PCs."
+    },
+    {
+      "house_rule": "Prep core: story center",
+      "file": "skills/shared/session-principles.md",
+      "anchor": "**Characters are the story.**"
+    },
+    {
+      "house_rule": "Prep core: story center",
+      "file": "skills/session-prep/SKILL.md",
+      "anchor": "**12. PC Roster + Arc Check**"
+    },
+    {
+      "house_rule": "Prep core: story center",
+      "file": "skills/session-prep/SKILL.md",
+      "anchor": "**13. Spotlight**"
+    },
+    {
+      "house_rule": "Prep core: session load",
+      "file": "skills/shared/session-principles.md",
+      "anchor": "**Never estimate scene durations**"
+    },
+    {
+      "house_rule": "Prep core: standalone sessions",
+      "file": "skills/ttrpg-expert/scenario-writing.md",
+      "anchor": "Pre-generated or pre-tied PCs"
+    },
+    {
+      "house_rule": "Read-aloud and plan style",
+      "file": "skills/session-prep/SKILL.md",
+      "anchor": "never paragraphs (the read-aloud blockquote is the one exception)"
     }
   ]
 }

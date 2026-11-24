@@ -5,10 +5,20 @@ skills. Where a rule here and a skill's own instructions disagree, the
 rule here wins. Where a campaign's own documents set a rule, the
 campaign's rule wins over both.
 
+## Profile and prep core
+
+- Find the campaign's profile first: a Project doc named
+  `Table-Keeper Profile`, or `_meta/table-keeper-profile.md` in a vault.
+  `profile.md` beside this file gives its format. With no profile, use the
+  defaults in this file and say so once.
+- When preparing, building or reviewing a session, an encounter or a
+  scenario, or running the world after a session, read `prep-core.md`
+  beside this file and follow it.
+
 ## Encounters
 
-- Build every encounter budget for the campaign's fixed party size, five
-  unless the campaign sets another number. Never multiply the budget by
+- Build every encounter budget for the profile's party size, five when
+  there is no profile. Never multiply the budget by
   the characters who signed up, and never rescale a built fight to the
   roster. The danger is fixed and players choose their risk.
 

@@ -9,7 +9,10 @@ It checks that:
 - the upstream text each house rule overrides is still there. When it is
   gone, upstream changed that section, and the rule needs a fresh look.
 
+- the profile template passes the profile checker.
+
 Run: python3 scripts/house_check.py            (report, exit 1 on a problem)
+     python3 scripts/house_check.py --profile PATH  (also check a profile)
      python3 scripts/house_check.py --apply-hooks   (put missing hooks back)
 """
 
@@ -113,13 +116,31 @@ def check(root: Path = ROOT) -> list[str]:
             problems.append(f"override '{rule['house_rule']}': upstream changed "
                             f"{rule['file']}; check the rule still fits, then "
                             f"update its anchor")
+    template = root / "skills" / "shared" / "house" / "profile-template.md"
+    if template.is_file():
+        for issue in _profile_check(root).check_text(
+                template.read_text(encoding="utf-8")):
+            problems.append(f"profile-template.md: {issue}")
+    else:
+        problems.append("skills/shared/house/profile-template.md is missing")
     return problems
+
+
+def _profile_check(root: Path = ROOT):
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(
+        "profile_check", root / "skills" / "shared" / "house" / "profile_check.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--apply-hooks", action="store_true",
                         help="put the hook back in every listed skill")
+    parser.add_argument("--profile", metavar="PATH",
+                        help="also check a campaign profile file")
     args = parser.parse_args(argv)
     if args.apply_hooks:
         cfg = load_config()
@@ -131,6 +152,9 @@ def main(argv: list[str] | None = None) -> int:
                 path.write_text(new, encoding="utf-8")
                 print(f"hooked skills/{name}/SKILL.md")
     problems = check()
+    if args.profile:
+        problems += [f"profile: {p}" for p in _profile_check().check_text(
+            Path(args.profile).read_text(encoding="utf-8"))]
     for p in problems:
         print(f"PROBLEM: {p}")
     if not problems:
