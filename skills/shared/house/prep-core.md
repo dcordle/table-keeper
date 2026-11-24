@@ -79,7 +79,9 @@ changes the session being played.
 
 - Build the main fight once, inside the profile's `Main fight band`, for
   the profile's party size at the session's build level. Write the total
-  XP against each budget the band names. Never rescale to the roster.
+  XP against each budget the band names. With a band of `judgment`, give
+  the XP against the Moderate and High budgets and leave the call to the
+  GM. Never rescale to the roster.
 - When `Risk note` is `yes`, add one line on how the fight plays at the
   lowest and highest level that may join.
 - Flag a fight as swingy when one of these holds, and say which:

@@ -21,6 +21,7 @@ def test_the_template_passes():
 def test_bands():
     assert pc.band_error("> Moderate and <= High") is None
     assert pc.band_error(">= 1.5x High") is None
+    assert pc.band_error("judgment") is None
     assert pc.band_error("above Moderate") is not None
     assert pc.band_error("> Moderate and") is not None
 

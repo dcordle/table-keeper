@@ -33,9 +33,11 @@ def _hours(value: str) -> str | None:
 
 
 def band_error(value: str) -> str | None:
+    if value.lower() == "judgment":
+        return None
     parts = [p.strip() for p in re.split(r"\band\b", value, flags=re.I)]
     if not parts or any(not p for p in parts):
-        return "must be like '> Moderate and <= High' or '>= 1.5x High'"
+        return "must be 'judgment' or like '> Moderate and <= High' or '>= 1.5x High'"
     for p in parts:
         if not BAND_PART.match(p):
             return f"'{p}' is not like '> Moderate' or '>= 1.5x High'"
