@@ -1,0 +1,5 @@
+version: 1
+
+vault:
+  system: "dnd-5e-2024"
+  campaign: The Grey Ferry
