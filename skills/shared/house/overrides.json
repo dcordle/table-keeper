@@ -1,0 +1,27 @@
+{
+  "hook": "**House layer.** Before acting, read `house/HOUSE.md` in the `shared` folder beside this skill's folder and follow it. Where it and this file disagree, `HOUSE.md` wins.",
+  "hooked_skills": [
+    "campaign-organizer",
+    "campaign-qa",
+    "publish-site",
+    "session-play",
+    "session-prep",
+    "session-wrapup",
+    "the-midwife",
+    "ttrpg-expert",
+    "vault-ingest"
+  ],
+  "plugin_name": "table-keeper",
+  "overrides": [
+    {
+      "house_rule": "Encounters: fixed party size",
+      "file": "skills/ttrpg-expert/systems/dnd-5e-2024/session-procedures.md",
+      "anchor": "Multiply by number of characters for total encounter budget."
+    },
+    {
+      "house_rule": "The world: completed sessions only",
+      "file": "skills/ttrpg-expert/world-evolution.md",
+      "anchor": "The world does not wait for the PCs."
+    }
+  ]
+}

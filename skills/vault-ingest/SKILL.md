@@ -194,3 +194,5 @@ Preserve: confirmed events + sources, GM answers verbatim,
 manifest, unresolved items, entity paths. Discard: intermediate
 reasoning, processed source text, failed extractions, superseded
 interview chains.
+
+**House layer.** Before acting, read `house/HOUSE.md` in the `shared` folder beside this skill's folder and follow it. Where it and this file disagree, `HOUSE.md` wins.

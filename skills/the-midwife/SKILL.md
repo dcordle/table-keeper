@@ -196,3 +196,5 @@ When the GM wants world-level work rather than an adventure ("flesh
 out my world's economics", "define my heritages", "let's do some
 worldbuilding"), read `references/worldbuilding-mode.md` and
 follow it.
+
+**House layer.** Before acting, read `house/HOUSE.md` in the `shared` folder beside this skill's folder and follow it. Where it and this file disagree, `HOUSE.md` wins.

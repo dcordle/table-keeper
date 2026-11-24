@@ -244,3 +244,5 @@ wiki-links; entity notes link back to sessions in their
   rather than deleting old relationships.
 - Sources vary (Google Drive, AI chat exports, GMAssistant logs,
   PDFs, raw text) — parse what you're given.
+
+**House layer.** Before acting, read `house/HOUSE.md` in the `shared` folder beside this skill's folder and follow it. Where it and this file disagree, `HOUSE.md` wins.

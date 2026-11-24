@@ -258,3 +258,5 @@ licensed TTRPG content in the vault must stay within its license
 (see `ATTRIBUTION.md` in the gm-apprentice repo). Never put
 licensed rule text into generated pages; if a vault note contains
 verbatim rules text, flag it for the GM to paraphrase.
+
+**House layer.** Before acting, read `house/HOUSE.md` in the `shared` folder beside this skill's folder and follow it. Where it and this file disagree, `HOUSE.md` wins.
