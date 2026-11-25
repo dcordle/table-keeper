@@ -1,0 +1,17 @@
+{"Q1": {
+  "newcomer": {"X": true, "Y": false},
+  "standalone": {"X": true, "Y": false},
+  "no-pc-arcs": {"X": true, "Y": false},
+  "npc-blocks": {"X": false, "Y": false},
+  "no-lore-dump": {"X": true, "Y": true},
+  "read-aloud": {"X": true, "Y": false},
+  "three-clues": {"X": false, "Y": false},
+  "route": {"X": true, "Y": true},
+  "rumors": {"X": true, "Y": false},
+  "world-taste": {"X": true, "Y": false},
+  "band": {"X": true, "Y": true},
+  "risk-note": {"X": true, "Y": false},
+  "required": {"X": true, "Y": true},
+  "load": {"X": true, "Y": false},
+  "walkthrough": {"X": true, "Y": false}
+}}

@@ -65,3 +65,10 @@ def test_hit_points():
     assert pc._hp("75%") is None
     assert pc._hp("as written") is None
     assert pc._hp("150%") is not None
+
+
+def test_creative_lead_is_optional_and_checked():
+    ok = TEMPLATE.replace("- **Session unit:**", "- **Creative lead:** shared\n- **Session unit:**")
+    assert pc.check_text(ok) == []
+    bad = TEMPLATE.replace("- **Session unit:**", "- **Creative lead:** player\n- **Session unit:**")
+    assert any("'Creative lead' is 'player'" in p for p in pc.check_text(bad))

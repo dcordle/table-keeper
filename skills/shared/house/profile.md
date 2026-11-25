@@ -29,6 +29,10 @@ else in the doc is ignored by the checker, so a GM can add notes.
 - **Party size for budgets:** a whole number. Default 5.
 - **Story center:** `world` (the job and the world are the story; personal
   plots are optional scenes) or `characters` (player characters' arcs lead).
+- **Creative lead:** *optional*. `gm` (the default: the GM settles the
+  premise, scenes and truths, and prep parks the rest as open questions)
+  or `shared` (prep drafts it all, labels reversible assumptions, and
+  asks only when an answer would change the design).
 - **Session unit:** what one session's prep is called, such as `dispatch`
   or `session`. It stands in for the original skills' chapter and session
   where they file prep.

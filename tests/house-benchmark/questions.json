@@ -7,23 +7,92 @@
       "skill": "session-prep",
       "prompt": "Prep me for next session in the Grey Ferry campaign at tests/house-benchmark/campaign. The table voted for The Bell Under the Water. Signups are still open, so I don't know who is coming yet. Levels 3 to 5. Build it at level 4.",
       "rubric": [
-        {"id": "no-em-dash", "text": "No em dashes anywhere in the response.", "check": "no_em_dash"},
-        {"id": "no-safety", "text": "No safety tools, content warnings or softening added.", "check": "absent", "pattern": "(?i)content warning|safety tool|x-card|lines and veils|trigger warning"},
-        {"id": "newcomer", "text": "A newcomer can get the job, the place, the stakes and a first move from a short briefing.", "check": "judge"},
-        {"id": "standalone", "text": "Nothing needs Session 1 or 2, an earlier attendance, or a particular player character.", "check": "judge"},
-        {"id": "no-pc-arcs", "text": "No per-PC arc stages or spotlight plans for named player characters.", "check": "judge"},
-        {"id": "npc-blocks", "text": "NPCs are written as what they want, know, share freely, what it takes to get the rest, and what they hide, with no dialogue scripts.", "check": "judge"},
-        {"id": "no-lore-dump", "text": "No NPC volunteers backstory or lore without a reason or a prompt from the crew.", "check": "judge"},
-        {"id": "read-aloud", "text": "Read-aloud is given for opening scenes or arriving at places.", "check": "judge"},
-        {"id": "three-clues", "text": "Each fact the crew must learn has three clues that do not share a person, room or check.", "check": "judge"},
-        {"id": "route", "text": "Gives the route from the Ferryhouse through Market Stair and Reedwater to the Drowned Chapel with danger words, and rolls complications only when travel matters.", "check": "judge"},
-        {"id": "rumors", "text": "Gives exactly three rumors, each tied to a place and a faction and pointing to a possible future job.", "check": "judge"},
-        {"id": "world-taste", "text": "Opens with a few sentences on the Reach as it stands now, not on what earlier crews did.", "check": "judge"},
-        {"id": "band", "text": "States the main fight's XP against the Moderate and High budgets for five level 4 characters (1,875 and 2,500), with the total above 1,875 and at or below 2,500.", "check": "judge"},
-        {"id": "risk-note", "text": "Gives one line on how the main fight plays at level 3 and at level 5.", "check": "judge"},
-        {"id": "required", "text": "Includes a hopeful beat, at least one ending without combat, and time for the Ferryhouse debrief.", "check": "judge"},
-        {"id": "load", "text": "Checks the whole session against 3 to 4 hours.", "check": "judge"},
-        {"id": "walkthrough", "text": "Walks the prep with a crew that skips the obvious entrance, one that misses the first clue, one that treats an opponent as an ally, and one that withdraws.", "check": "judge"}
+        {
+          "id": "no-em-dash",
+          "text": "No em dashes anywhere in the response.",
+          "check": "no_em_dash"
+        },
+        {
+          "id": "no-safety",
+          "text": "No safety tools, content warnings or softening added.",
+          "check": "absent",
+          "pattern": "(?i)content warning|safety tool|x-card|lines and veils|trigger warning"
+        },
+        {
+          "id": "newcomer",
+          "text": "A newcomer can get the job, the place, the stakes and a first move from a short briefing.",
+          "check": "judge"
+        },
+        {
+          "id": "standalone",
+          "text": "Nothing needs Session 1 or 2, an earlier attendance, or a particular player character.",
+          "check": "judge"
+        },
+        {
+          "id": "no-pc-arcs",
+          "text": "No per-PC arc stages or spotlight plans for named player characters.",
+          "check": "judge"
+        },
+        {
+          "id": "npc-blocks",
+          "text": "NPCs are written as what they want, know, share freely, what it takes to get the rest, and what they hide, with a way in for every hidden fact and no dialogue scripts. A read-aloud briefing and the text of found documents are not dialogue.",
+          "check": "judge"
+        },
+        {
+          "id": "no-lore-dump",
+          "text": "No NPC volunteers backstory or lore without a reason or a prompt from the crew.",
+          "check": "judge"
+        },
+        {
+          "id": "read-aloud",
+          "text": "Read-aloud is given for opening scenes or arriving at places.",
+          "check": "judge"
+        },
+        {
+          "id": "three-clues",
+          "text": "Each fact the crew must learn has three clues that do not share a person, place or check.",
+          "check": "judge"
+        },
+        {
+          "id": "route",
+          "text": "Gives the route from the Ferryhouse through Market Stair and Reedwater to the Drowned Chapel with danger words, and rolls complications only when travel matters.",
+          "check": "judge"
+        },
+        {
+          "id": "rumors",
+          "text": "Gives exactly three rumors, each tied to a place and a faction and pointing to a possible future job.",
+          "check": "judge"
+        },
+        {
+          "id": "world-taste",
+          "text": "Opens with a few sentences on the Reach as it stands now, not on what earlier crews did.",
+          "check": "judge"
+        },
+        {
+          "id": "band",
+          "text": "States the main fight's XP against the Moderate and High budgets for five level 4 characters (1,875 and 2,500), with the total above 1,875 and at or below 2,500.",
+          "check": "judge"
+        },
+        {
+          "id": "risk-note",
+          "text": "Gives one line on how the main fight plays at level 3 and at level 5.",
+          "check": "judge"
+        },
+        {
+          "id": "required",
+          "text": "Includes a hopeful beat, at least one ending without combat, and time for the Ferryhouse debrief.",
+          "check": "judge"
+        },
+        {
+          "id": "load",
+          "text": "Checks the whole session against 3 to 4 hours.",
+          "check": "judge"
+        },
+        {
+          "id": "walkthrough",
+          "text": "Walks the prep with a crew that skips the obvious entrance, one that misses the first clue, one that treats an opponent as an ally, and one that withdraws.",
+          "check": "judge"
+        }
       ]
     },
     {
@@ -31,14 +100,47 @@
       "skill": "ttrpg-expert",
       "prompt": "Four players have signed up for The Bell Under the Water in the Grey Ferry campaign at tests/house-benchmark/campaign. Build the main fight in the Drowned Chapel for level 4 characters.",
       "rubric": [
-        {"id": "no-em-dash", "text": "No em dashes anywhere in the response.", "check": "no_em_dash"},
-        {"id": "high-five", "text": "Names the High budget for five level 4 characters (2,500).", "check": "present", "pattern": "2,?500"},
-        {"id": "five-not-four", "text": "Builds the budget for five characters, not the four who signed up.", "check": "judge"},
-        {"id": "in-band", "text": "Total XP is above 1,875 and at or below 2,500.", "check": "judge"},
-        {"id": "no-rescale", "text": "Offers no adjustment or scaling for the four who signed up.", "check": "judge"},
-        {"id": "swingy", "text": "Checks the fight for swinginess (save-or-lose at level 3, one-turn drops, action economy).", "check": "judge"},
-        {"id": "backup-retreat", "text": "Says who comes if the fight gets loud and how the crew can pull back or end it without killing.", "check": "judge"},
-        {"id": "labels", "text": "Labels every homebrew creature or changed stat block.", "check": "judge"}
+        {
+          "id": "no-em-dash",
+          "text": "No em dashes anywhere in the response.",
+          "check": "no_em_dash"
+        },
+        {
+          "id": "high-five",
+          "text": "Names the High budget for five level 4 characters (2,500).",
+          "check": "present",
+          "pattern": "2,?500"
+        },
+        {
+          "id": "five-not-four",
+          "text": "Builds the budget for five characters, not the four who signed up.",
+          "check": "judge"
+        },
+        {
+          "id": "in-band",
+          "text": "Total XP is above 1,875 and at or below 2,500.",
+          "check": "judge"
+        },
+        {
+          "id": "no-rescale",
+          "text": "Offers no adjustment or scaling for the four who signed up.",
+          "check": "judge"
+        },
+        {
+          "id": "swingy",
+          "text": "Checks the fight for swinginess (save-or-lose at level 3, one-turn drops, action economy).",
+          "check": "judge"
+        },
+        {
+          "id": "backup-retreat",
+          "text": "Says who comes if the fight gets loud and how the crew can pull back or end it without killing.",
+          "check": "judge"
+        },
+        {
+          "id": "labels",
+          "text": "Labels every homebrew creature or changed stat block.",
+          "check": "judge"
+        }
       ]
     },
     {
@@ -46,11 +148,31 @@
       "skill": "ttrpg-expert",
       "prompt": "Write up Old Ma Tessaly for The Bell Under the Water in the Grey Ferry campaign at tests/house-benchmark/campaign, ready to run at the table.",
       "rubric": [
-        {"id": "no-em-dash", "text": "No em dashes anywhere in the response.", "check": "no_em_dash"},
-        {"id": "block", "text": "Gives what she wants, what she knows, what she shares freely, what it takes to get the rest, and what she hides.", "check": "judge"},
-        {"id": "no-script", "text": "No conversation script, dialogue tree or more than one sample line.", "check": "judge"},
-        {"id": "gated-secret", "text": "Her secret about the cut bell rope is gated behind something the crew asks, does or earns.", "check": "judge"},
-        {"id": "no-lore-dump", "text": "She does not explain the chapel's history unprompted.", "check": "judge"}
+        {
+          "id": "no-em-dash",
+          "text": "No em dashes anywhere in the response.",
+          "check": "no_em_dash"
+        },
+        {
+          "id": "block",
+          "text": "Gives what she wants, what she knows, what she shares freely, what it takes to get the rest, and what she hides.",
+          "check": "judge"
+        },
+        {
+          "id": "no-script",
+          "text": "No conversation script, dialogue tree or more than one sample line. A read-aloud briefing and the text of found documents are not sample lines.",
+          "check": "judge"
+        },
+        {
+          "id": "gated-secret",
+          "text": "Her secret about the cut bell rope is gated behind something the crew asks, does or earns.",
+          "check": "judge"
+        },
+        {
+          "id": "no-lore-dump",
+          "text": "She does not explain the chapel's history unprompted.",
+          "check": "judge"
+        }
       ]
     },
     {
@@ -58,11 +180,31 @@
       "skill": "session-wrapup",
       "prompt": "Session 3 of the Grey Ferry campaign (tests/house-benchmark/campaign) is done. Brannoc and Teodor took A Chain Across the Reedwater and withdrew when the Tollgate men brought crossbows; the chain is still up. Since then two weeks of real time have passed, and Ivy's player ran a play-by-post scene in Discord where Ivy gossiped at the market about the bell. Update the world.",
       "rubric": [
-        {"id": "no-em-dash", "text": "No em dashes anywhere in the response.", "check": "no_em_dash"},
-        {"id": "sessions-only", "text": "Only the completed session moves the world; the two weeks of real time and the play-by-post scene move nothing.", "check": "judge"},
-        {"id": "order", "text": "Works in order: the crew's result and node changes, then faction changes, then rumors, then whether a world event is due.", "check": "judge"},
-        {"id": "faction-steps", "text": "The Reedwives take their next step (the diving bell) and the Tollgate Company keeps or extends its chain, each with a visible sign.", "check": "judge"},
-        {"id": "nothing-else", "text": "Says plainly what did not change.", "check": "judge"}
+        {
+          "id": "no-em-dash",
+          "text": "No em dashes anywhere in the response.",
+          "check": "no_em_dash"
+        },
+        {
+          "id": "sessions-only",
+          "text": "Only the completed session moves the world; the two weeks of real time and the play-by-post scene move nothing.",
+          "check": "judge"
+        },
+        {
+          "id": "order",
+          "text": "Works in order: the crew's result and node changes, then faction changes, then rumors, then whether a world event is due.",
+          "check": "judge"
+        },
+        {
+          "id": "faction-steps",
+          "text": "The Reedwives take their next step (the diving bell) and the Tollgate Company keeps or extends its chain, each with a visible sign.",
+          "check": "judge"
+        },
+        {
+          "id": "nothing-else",
+          "text": "Says plainly what did not change.",
+          "check": "judge"
+        }
       ]
     },
     {
@@ -70,11 +212,31 @@
       "skill": "session-prep",
       "prompt": "Here's my plan for a 3.5 hour job in the Grey Ferry campaign (tests/house-benchmark/campaign): a briefing, three travel legs each with a complication roll, six places to investigate, two side fights, a three-phase main fight, and the debrief. Will it fit?",
       "rubric": [
-        {"id": "no-em-dash", "text": "No em dashes anywhere in the response.", "check": "no_em_dash"},
-        {"id": "verdict", "text": "Gives a plain verdict on whether the whole session fits 3.5 hours instead of declining to estimate.", "check": "judge"},
-        {"id": "no-scene-minutes", "text": "Does not set minute targets for individual scenes as rules.", "check": "judge"},
-        {"id": "cut-order", "text": "Says what to cut first: a place, a clue handed over, a shorter route, or starting the confrontation closer.", "check": "judge"},
-        {"id": "travel", "text": "Suggests a shorter route or one roll for the whole trip instead of three complication rolls.", "check": "judge"}
+        {
+          "id": "no-em-dash",
+          "text": "No em dashes anywhere in the response.",
+          "check": "no_em_dash"
+        },
+        {
+          "id": "verdict",
+          "text": "Gives a plain verdict on whether the whole session fits 3.5 hours instead of declining to estimate.",
+          "check": "judge"
+        },
+        {
+          "id": "no-scene-minutes",
+          "text": "Does not set minute targets for individual scenes as rules.",
+          "check": "judge"
+        },
+        {
+          "id": "cut-order",
+          "text": "Says what to cut first: a place, a clue handed over, a shorter route, or starting the confrontation closer.",
+          "check": "judge"
+        },
+        {
+          "id": "travel",
+          "text": "Suggests a shorter route or one roll for the whole trip instead of three complication rolls.",
+          "check": "judge"
+        }
       ]
     },
     {
@@ -82,11 +244,31 @@
       "skill": "ttrpg-expert",
       "prompt": "For a level 3 job in the Grey Ferry campaign (tests/house-benchmark/campaign), my main fight is one Bog Widow. Homebrew: CR 4, 1,100 XP, AC 13, 90 HP, two claws at +6 for 2d6 slashing each, and Drowning Song, recharge 5 to 6: each creature within 30 feet makes a DC 14 Constitution save or drops to 0 hit points. Is this fight fine?",
       "rubric": [
-        {"id": "no-em-dash", "text": "No em dashes anywhere in the response.", "check": "no_em_dash"},
-        {"id": "below-band", "text": "Uses five level 3 characters (Moderate 1,125, High 2,000) and says 1,100 XP is below the band.", "check": "judge"},
-        {"id": "save-or-drop", "text": "Flags Drowning Song as a save-or-drop effect that is swingy at level 3.", "check": "judge"},
-        {"id": "action-economy", "text": "Flags a solo creature with no legendary or extra actions against five characters.", "check": "judge"},
-        {"id": "fix", "text": "Offers a fix that lands inside the band and removes the swing.", "check": "judge"}
+        {
+          "id": "no-em-dash",
+          "text": "No em dashes anywhere in the response.",
+          "check": "no_em_dash"
+        },
+        {
+          "id": "below-band",
+          "text": "Uses five level 3 characters (Moderate 1,125, High 2,000) and says 1,100 XP is below the band.",
+          "check": "judge"
+        },
+        {
+          "id": "save-or-drop",
+          "text": "Flags Drowning Song as a save-or-drop effect that is swingy at level 3.",
+          "check": "judge"
+        },
+        {
+          "id": "action-economy",
+          "text": "Flags a solo creature with no legendary or extra actions against five characters.",
+          "check": "judge"
+        },
+        {
+          "id": "fix",
+          "text": "Offers a fix that lands inside the band and removes the swing.",
+          "check": "judge"
+        }
       ]
     }
   ]
