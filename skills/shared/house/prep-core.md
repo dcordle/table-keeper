@@ -79,7 +79,9 @@ Follow the profile's `Travel` field:
 
 ## Rumors
 
-When `Rumors per session` is above 0, write that many rumors. Each is one
+When `Rumors per session` is above 0, write that many rumors. When it is
+`optional`, write rumors only where a place or person gives a natural
+reason, with no set count. Each is one
 line in the voice of someone in the world, tied to a place and a faction,
 and points to a possible future session. Give each a person or place where
 the group can hear it. A rumor heard in play is logged for later and never

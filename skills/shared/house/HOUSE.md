@@ -17,6 +17,11 @@ campaign's rule wins over both.
   beside this file and follow it.
 - When the profile's `Record` is `project docs`, read `project-docs.md`
   beside this file and follow it in place of every vault step.
+- When looking up a rule, spell, monster, item or character option and
+  the profile's `Reference` section names a rules source, read
+  `rules-source.md` beside this file and follow it.
+- When wrapping up a session from a transcript, read `transcripts.md`
+  beside this file and follow it.
 - The profile's `Creative lead` says who settles a session's premise,
   scenes and truths. `gm`, the default, keeps the original session-prep
   rule: draft only what the GM has settled and park the rest as open

@@ -72,6 +72,11 @@
       "house_rule": "Creative lead",
       "file": "skills/session-prep/SKILL.md",
       "anchor": "Never emit a settled `## Session Intent`, spotlight or `## Planned Scenes` without GM input."
+    },
+    {
+      "house_rule": "Rules source: before the SRD files",
+      "file": "skills/ttrpg-expert/SKILL.md",
+      "anchor": "Check it when a question needs setting content the SRD/ORC files don't cover."
     }
   ]
 }

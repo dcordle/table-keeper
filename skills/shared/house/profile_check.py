@@ -27,6 +27,12 @@ def _whole0(value: str) -> str | None:
     return None if re.fullmatch(r"\d+", value) else "must be a whole number"
 
 
+def _rumors(value: str) -> str | None:
+    if value.lower() == "optional" or re.fullmatch(r"\d+", value):
+        return None
+    return "must be a whole number, or 'optional' for no fixed count"
+
+
 def _hours(value: str) -> str | None:
     return None if re.fullmatch(r"\d+(\.\d+)?( to \d+(\.\d+)?)?", value) else \
         "must be hours, such as '3 to 4' or '2'"
@@ -88,7 +94,7 @@ SPEC = {
     },
     "Prep": {
         "Plan style": (True, {"bullets", "table-ready"}),
-        "Rumors per session": (True, _whole0),
+        "Rumors per session": (True, _rumors),
         "World taste": (True, {"yes", "no"}),
         "Archive clues": (False, None),
         "Required elements": (False, None),
@@ -103,7 +109,18 @@ SPEC = {
         "GM voice": (True, None),
     },
 }
-OPTIONAL_SECTIONS = {"Overrides"}
+OPTIONAL_SECTIONS = {"Overrides", "Reference"}
+
+# Checked only when the section is present.
+OPTIONAL_SPEC = {
+    "Reference": {
+        "Rules source": (True, None),
+        "Source details": (False, None),
+        "Player option books": (False, None),
+        "Monster books": (False, None),
+        "Transcripts": (False, None),
+    },
+}
 
 
 def parse(text: str) -> tuple[str | None, dict[str, dict[str, str]]]:
@@ -148,6 +165,15 @@ def check_text(text: str) -> list[str]:
                 err = rule(value)
                 if err:
                     problems.append(f"{section}: '{name}' {err}")
+        for name in sorted(set(got) - set(fields)):
+            problems.append(f"{section}: unknown field '{name}'")
+    for section, fields in OPTIONAL_SPEC.items():
+        if section not in sections:
+            continue
+        got = sections[section]
+        for name, (required, _rule) in fields.items():
+            if required and not (got.get(name) or "").strip():
+                problems.append(f"{section}: missing field '{name}'")
         for name in sorted(set(got) - set(fields)):
             problems.append(f"{section}: unknown field '{name}'")
     for section in sorted(set(sections) - set(SPEC) - OPTIONAL_SECTIONS):
