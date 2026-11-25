@@ -47,6 +47,12 @@ For `open table` and `drop-in` formats:
   `found` (the group learns of it by reaching a place linked to it) or
   `hidden` (only clues reveal it). A hidden place is a fact: give it a
   row in the facts table, so it gets three ways to find it.
+- A site with five or more rooms is drawn as a node map: rooms as boxes,
+  ways between them as lines, hidden ways dashed. Give it at least one
+  loop, one dead end and one choke point every route crosses unless a
+  hidden way is found; the guard, trap or lair goes at the choke. Key each
+  room in one line: name, large or not, locked or not, and at most two
+  features the group can use. Smaller sites skip this.
 - A place may have two states, such as Quiet and Alerted or Day and Night:
   what flips it and what the group sees in each.
 - Write the people as one table, one row per person, with these columns:
