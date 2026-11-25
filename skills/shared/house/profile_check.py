@@ -48,6 +48,14 @@ def _other(value: str) -> str | None:
     return None if value.lower() == "unconstrained" else band_error(value)
 
 
+def _risk(value: str) -> str | None:
+    """'yes', 'no', or 'yes, <which levels>'."""
+    v = value.lower()
+    if v in {"yes", "no"} or (v.startswith("yes,") and v[4:].strip()):
+        return None
+    return "must be 'yes', 'no', or 'yes, <which levels>'"
+
+
 def _hp(value: str) -> str | None:
     if value.lower() in {"as written", "average", "max"}:
         return None
@@ -72,7 +80,7 @@ SPEC = {
         "Other fights": (True, _other),
         "Monster hit points": (True, _hp),
         "Boss standard": (False, None),
-        "Risk note": (True, {"yes", "no"}),
+        "Risk note": (True, _risk),
     },
     "Travel": {
         "Travel": (True, {"cut", "nodes", "hexes", "pointcrawl"}),

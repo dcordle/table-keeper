@@ -72,3 +72,11 @@ def test_creative_lead_is_optional_and_checked():
     assert pc.check_text(ok) == []
     bad = TEMPLATE.replace("- **Session unit:**", "- **Creative lead:** player\n- **Session unit:**")
     assert any("'Creative lead' is 'player'" in p for p in pc.check_text(bad))
+
+
+def test_a_risk_note_may_name_its_levels():
+    assert pc._risk("yes") is None
+    assert pc._risk("yes, at the tier's lowest, one-up and highest level") is None
+    assert pc._risk("no") is None
+    assert pc._risk("yes,") is not None
+    assert pc._risk("sometimes") is not None
