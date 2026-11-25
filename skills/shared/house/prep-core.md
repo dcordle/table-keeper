@@ -43,6 +43,10 @@ For `open table` and `drop-in` formats:
 - Each place: entrances and links, the read-aloud for arriving or for
   something happening there, who is there, the evidence there tagged with
   the fact it supports, checks and DCs written in the place, and hazards.
+- Mark each place `known` (the group knows it before the job starts),
+  `found` (the group learns of it by reaching a place linked to it) or
+  `hidden` (only clues reveal it). A hidden place is a fact: give it a
+  row in the facts table, so it gets three ways to find it.
 - A place may have two states, such as Quiet and Alerted or Day and Night:
   what flips it and what the group sees in each.
 - Write the people as one table, one row per person, with these columns:
@@ -76,6 +80,19 @@ Follow the profile's `Travel` field:
   hazard. Roll travel complications only as the profile says. If a route
   crosses more than two dangerous stretches, offer a shorter route or one
   roll for the whole trip.
+- Give the route as one line of landmarks the players would know, such as
+  "over the bridge, past the cathedral, into the market", which doubles as
+  the travel read-aloud. A group that leaves the map is treated as being
+  at the nearest point on it. When the group asks for a place that would
+  plainly exist, add it as a point instead of saying it isn't there.
+
+### Complication and encounter tables
+
+When writing or reviewing a travel complication or random encounter
+table, no more than half its results are fights. The rest are hazards,
+setbacks, hard choices, boons and meetings with people who are not
+hostile. Order results from mild to nasty, write each loosely enough to
+use more than once, and let at least one result give a clue or a rumor.
 
 ## Rumors
 
