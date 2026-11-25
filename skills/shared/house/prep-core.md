@@ -93,7 +93,8 @@ changes the session being played.
   the XP against the Moderate and High budgets and leave the call to the
   GM. Never rescale to the roster.
 - When `Risk note` is `yes`, add one line on how the fight plays at the
-  lowest and highest level that may join.
+  lowest and highest level that may join, or at the levels the profile
+  names after `yes,`.
 - Flag a fight as swingy when one of these holds, and say which:
   - a save-or-lose or save-or-drop effect at the lowest eligible level;
   - one creature's turn can drop a lowest-level character from full;

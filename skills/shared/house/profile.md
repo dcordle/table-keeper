@@ -53,7 +53,9 @@ else in the doc is ignored by the checker, so a GM can add notes.
 - **Boss standard:** *optional*. Free text, such as legendary resistances,
   legendary and lair actions, minion count.
 - **Risk note:** `yes` to give one line on how the main fight plays at the
-  lowest and highest eligible level, `no` otherwise.
+  lowest and highest eligible level, `no` otherwise. `yes,` followed by
+  the levels names which ones to cover, such as
+  `yes, at the tier's lowest, one-up and highest level`.
 
 ### Travel
 
