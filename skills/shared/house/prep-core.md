@@ -53,6 +53,15 @@ For `open table` and `drop-in` formats:
   hidden way is found; the guard, trap or lair goes at the choke. Key each
   room in one line: name, large or not, locked or not, and at most two
   features the group can use. Smaller sites skip this.
+- Such a site rolls encounters on a danger die that starts at d6 and steps
+  up to d8, d10 and d12 as the group makes noise, raises an alarm or goes
+  deeper. A roll of 6 or more is an encounter: roll the same die again on
+  the site's table, numbered up to the largest die, with the mildest
+  results lowest, so the worst are reached only on the bigger dice. The
+  die resets when the session ends.
+- When travel runs through nodes or a site is mapped, add a player map
+  card: the known points and the routes the group can see, in words a
+  character would use, with no hidden place on it.
 - A place may have two states, such as Quiet and Alerted or Day and Night:
   what flips it and what the group sees in each.
 - Write the people as one table, one row per person, with these columns:
@@ -99,6 +108,22 @@ table, no more than half its results are fights. The rest are hazards,
 setbacks, hard choices, boons and meetings with people who are not
 hostile. Order results from mild to nasty, write each loosely enough to
 use more than once, and let at least one result give a clue or a rumor.
+
+## Building a node or district
+
+When building or filling a node, district or hex for the campaign map
+rather than for one session:
+
+- Name the campaign's three to five major factions or threats. Give the
+  node one seed for each, set in a real place there, plus one local
+  oddity that belongs to the node alone. Each seed is a line or two: what
+  is happening, who is behind it, and the first thing a group would
+  notice.
+- A group that searches the node for something in particular finds that
+  faction's seed. A general search turns up one seed at random. A found
+  seed becomes a rumor or a future job, never a change to the session
+  being played.
+- Mark each seed's tier so it can become a job inside the node's range.
 
 ## Rumors
 
@@ -147,7 +172,9 @@ that misses the first clue, one that treats an opponent as an ally, and
 one that withdraws. Each still reaches an end.
 
 End the prep with a short Checks list: every cell of the facts table and
-every Way in cell of the people table is filled, the fight sits in the
+every Way in cell of the people table is filled, every place points by a
+lead to at least one other place and the start points into the job, the
+fight sits in the
 band, and each `Required elements` item from the profile is present. Fix
 any gap before delivering.
 
