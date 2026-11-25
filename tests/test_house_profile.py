@@ -80,3 +80,18 @@ def test_a_risk_note_may_name_its_levels():
     assert pc._risk("no") is None
     assert pc._risk("yes,") is not None
     assert pc._risk("sometimes") is not None
+
+
+def test_reference_section_is_optional_and_checked():
+    ok = TEMPLATE + "\n## Reference\n\n- **Rules source:** supabase\n- **Transcripts:** uploaded in chat\n"
+    assert pc.check_text(ok) == []
+    missing = TEMPLATE + "\n## Reference\n\n- **Transcripts:** uploaded in chat\n"
+    assert "Reference: missing field 'Rules source'" in pc.check_text(missing)
+    unknown = TEMPLATE + "\n## Reference\n\n- **Rules source:** none\n- **Password:** x\n"
+    assert "Reference: unknown field 'Password'" in pc.check_text(unknown)
+
+
+def test_rumors_may_be_optional():
+    assert pc._rumors("optional") is None
+    assert pc._rumors("0") is None and pc._rumors("5") is None
+    assert pc._rumors("none required") is not None

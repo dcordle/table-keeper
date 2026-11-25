@@ -68,7 +68,8 @@ else in the doc is ignored by the checker, so a GM can add notes.
 
 - **Plan style:** `bullets` (the original skills' style) or `table-ready`
   (read-aloud where it fits, NPC blocks, DCs written in the scene).
-- **Rumors per session:** a whole number, 0 for none.
+- **Rumors per session:** a whole number, 0 for none, or `optional` for no
+  fixed count: rumors go in only where they fit.
 - **World taste:** `yes` for a few sentences on the world before the
   briefing, `no` otherwise.
 - **Archive clues:** *optional*. How many optional larger-mystery clues a
@@ -82,6 +83,23 @@ else in the doc is ignored by the checker, so a GM can add notes.
 - **Where:** the Project name or the vault folder.
 - **Key docs:** *optional*. A comma list of the docs that hold the rules,
   such as `Design Document, Campaign Brief`.
+
+### Reference
+
+*Optional section.* Where to look things up and where transcripts come
+from. Keep connection details here, in the campaign's private record,
+never in the repository.
+
+- **Rules source:** `none`, or the connected tool that holds the GM's
+  books, such as `supabase`.
+- **Source details:** *optional*. Which project, schema and tables to
+  read, and how to search them.
+- **Player option books:** *optional*. Which books players may build
+  from, or the doc that lists them.
+- **Monster books:** *optional*. Which books the GM may draw NPCs and
+  monsters from.
+- **Transcripts:** *optional*. Where session transcripts come from, such
+  as `uploaded in chat`.
 
 ### Voice
 
