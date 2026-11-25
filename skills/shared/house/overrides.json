@@ -52,6 +52,26 @@
       "house_rule": "Read-aloud and plan style",
       "file": "skills/session-prep/SKILL.md",
       "anchor": "never paragraphs (the read-aloud blockquote is the one exception)"
+    },
+    {
+      "house_rule": "Project-docs mode: no version gate",
+      "file": "skills/shared/session-principles.md",
+      "anchor": "Run once, on first invocation, before any other vault work:"
+    },
+    {
+      "house_rule": "Project-docs mode: the record is the Project",
+      "file": "skills/shared/session-principles.md",
+      "anchor": "All persistent state lives in the vault (Obsidian or plain folder)."
+    },
+    {
+      "house_rule": "Project-docs mode: GM confirms doc writes",
+      "file": "skills/shared/session-principles.md",
+      "anchor": "Wrap-up creates entities automatically, without asking"
+    },
+    {
+      "house_rule": "Creative lead",
+      "file": "skills/session-prep/SKILL.md",
+      "anchor": "Never emit a settled `## Session Intent`, spotlight or `## Planned Scenes` without GM input."
     }
   ]
 }

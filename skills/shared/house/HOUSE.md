@@ -15,6 +15,14 @@ campaign's rule wins over both.
 - When preparing, building or reviewing a session, an encounter or a
   scenario, or running the world after a session, read `prep-core.md`
   beside this file and follow it.
+- When the profile's `Record` is `project docs`, read `project-docs.md`
+  beside this file and follow it in place of every vault step.
+- The profile's `Creative lead` says who settles a session's premise,
+  scenes and truths. `gm`, the default, keeps the original session-prep
+  rule: draft only what the GM has settled and park the rest as open
+  questions. `shared` means draft the whole session, label each
+  reversible assumption, and ask only when a missing answer would change
+  the design.
 
 ## Encounters
 
@@ -37,6 +45,8 @@ campaign's rule wins over both.
   scripts or dialogue trees.
 - Give the voice as a speech pattern in a few words. Write at most one
   short sample line per NPC, and no quoted exchanges or lists of lines.
+  A read-aloud briefing an NPC gives, and the text of a letter, note or
+  sign the crew finds, are read-aloud, not sample lines.
 - Every hidden fact an NPC holds names at least one way the crew can get
   it: a question, a push, a trade, a piece of evidence, or something the
   crew does. A secret with no way in is cut or given one.

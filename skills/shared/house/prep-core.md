@@ -45,15 +45,24 @@ For `open table` and `drop-in` formats:
   the fact it supports, checks and DCs written in the place, and hazards.
 - A place may have two states, such as Quiet and Alerted or Day and Night:
   what flips it and what the group sees in each.
-- Each person: what they want, know, share freely, what it takes to get
-  the rest, and what they hide or lie about, with a way in for every
-  hidden fact and at most one sample line (the house NPC rule).
+- Write the people as one table, one row per person, with these columns:
+  Who, Wants, Knows, Shares freely, Hides or lies about, Way in, Voice.
+  `Way in` names how the crew gets each hidden fact (a question, a push,
+  a trade, evidence or an action), one per fact, so a secret with no way
+  in shows as an empty cell. `Voice` is a speech pattern in a few words
+  and at most one short sample line.
 
 ## Clues and obstacles
 
-- Every fact the group must learn to finish has three clues that do not
-  share a person, locked room or check. Each fact's clues are reachable
-  within two or three moves of the group's first lead.
+- Write the facts the group must learn to finish as one table, with the
+  columns Fact, Clue 1, Clue 2, Clue 3 and Shared bottleneck. It has a
+  row for what the threat is, where it is, how to stop it, and any fact a
+  later step depends on. Each clue cell names its person, place or check,
+  and no two clues in a row share one: two clues found in the same place
+  count as one. Fill every cell: a fact short of
+  three clues gets more, or is handed over in the briefing and says so.
+- Each fact's clues are reachable within two or three moves of the
+  group's first lead.
 - Every obstacle the session needs passed has three ways past.
 - At least one ending needs no combat.
 
@@ -109,9 +118,12 @@ a shorter route, or starting the confrontation closer.
 
 Walk the prep with four groups: one that skips the obvious entrance, one
 that misses the first clue, one that treats an opponent as an ally, and
-one that withdraws. Each still reaches an end. Check every NPC: each
-hidden fact has a way in, and no NPC has more than one sample line. Confirm every
-`Required elements` item from the profile is there.
+one that withdraws. Each still reaches an end.
+
+End the prep with a short Checks list: every cell of the facts table and
+every Way in cell of the people table is filled, the fight sits in the
+band, and each `Required elements` item from the profile is present. Fix
+any gap before delivering.
 
 ## After the session
 

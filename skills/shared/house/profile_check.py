@@ -63,6 +63,7 @@ SPEC = {
         "Session length": (True, _hours),
         "Party size for budgets": (True, _whole),
         "Story center": (True, {"world", "characters"}),
+        "Creative lead": (False, {"gm", "shared"}),
         "Session unit": (True, None),
         "Start and end": (False, None),
     },
